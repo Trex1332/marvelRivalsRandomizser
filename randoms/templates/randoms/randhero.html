@@ -3,11 +3,9 @@
 {% block content %}
     <h1>heros</h1>
     <ul>
-        {% for hero in heroes %}
-            <li>{{hero.name}}
-                <img src="{{hero.image}}" alt="">
-            </li>
 
-        {% endfor %}
+            <li>{{hero.name}}
+                <img src="{{hero.images}}" alt="">
+            </li>
     </ul>
 {% endblock %}

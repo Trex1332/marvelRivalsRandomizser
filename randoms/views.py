@@ -10,6 +10,6 @@ def index(request):
 
 def random_hero(request):
     heroes =Hero.objects.all()
-    context = {'heroes': heroes}
+    context = {'heroes': random.choice(heroes)}
     return render(request, 'randoms/randhero.html', context)
     
